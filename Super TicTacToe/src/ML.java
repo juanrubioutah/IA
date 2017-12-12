@@ -24,10 +24,35 @@ public class ML {
 	public static void play(int boardToPlayOn, int nextTurn) {
 		Init.printBoard(Init.board1, Init.board1, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9);
 		try {
-			Thread.sleep(100);
+			Thread.sleep(10);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
+		}
+		PlayerManager.checkForSmallWin(Init.board1);
+		PlayerManager.checkForSmallWin(Init.board2);
+		PlayerManager.checkForSmallWin(Init.board3);
+		PlayerManager.checkForSmallWin(Init.board4);
+		PlayerManager.checkForSmallWin(Init.board5);
+		PlayerManager.checkForSmallWin(Init.board6);
+		PlayerManager.checkForSmallWin(Init.board7);
+		PlayerManager.checkForSmallWin(Init.board8);
+		PlayerManager.checkForSmallWin(Init.board9);
+		PlayerManager.checkForSmallTie(1);
+		PlayerManager.checkForSmallTie(2);
+		PlayerManager.checkForSmallTie(3);
+		PlayerManager.checkForSmallTie(4);
+		PlayerManager.checkForSmallTie(5);
+		PlayerManager.checkForSmallTie(6);
+		PlayerManager.checkForSmallTie(7);
+		PlayerManager.checkForSmallTie(8);
+		PlayerManager.checkForSmallTie(9);
+		if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+			System.out.println("Complete"); return;
+		}
+		if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+			System.out.println("TIE");
+			return;
 		}
 		if(nextTurn==1) {
 			if(boardToPlayOn==1) {
@@ -39,8 +64,15 @@ public class ML {
 						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
 							play(10, 2);
 						}
+						if(PlayerManager.checkForSmallTie(1)==true){
+							play(10,2);
+						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -55,16 +87,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==2) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board2.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board2.board[randChoice].equals("-")) {
+						Init.board2.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board2)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(2)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -79,16 +118,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==3) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board3.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board3.board[randChoice].equals("-")) {
+						Init.board3.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board3)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(3)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -103,16 +149,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==4) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board4.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board4.board[randChoice].equals("-")) {
+						Init.board4.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board4)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(4)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -127,16 +180,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==5) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board5.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board5.board[randChoice].equals("-")) {
+						Init.board5.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board5)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(5)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -151,16 +211,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==6) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board6.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board6.board[randChoice].equals("-")) {
+						Init.board6.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board6)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(6)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -175,16 +242,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==7) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board7.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board7.board[randChoice].equals("-")) {
+						Init.board7.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board7)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(7)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -199,16 +273,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==8) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board8.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board8.board[randChoice].equals("-")) {
+						Init.board8.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board8)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(8)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -223,16 +304,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==9) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board9.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "X";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board9.board[randChoice].equals("-")) {
+						Init.board9.board[randChoice] = "X";
+						if(PlayerManager.checkForSmallWin(Init.board9)==true) {
 							play(10, 2);
+						}
+						if(PlayerManager.checkForSmallTie(9)==true){
+							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 2);
@@ -247,13 +335,34 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==10) {
+				if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+					System.out.println("Complete"); return;
+				}
+				if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+					System.out.println("TIE");
+					return;
+				}
 				Random rndm = new Random();
 				int rand = rndm.nextInt(9)+1;
 				if(rand<1||rand>9) {
+					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+						System.out.println("Complete"); return;
+					}
+					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+						System.out.println("TIE");
+						return;
+					}
 					play(10, 1); //Try again
 				}
 				else {
-					boardToPlayOn = rand;
+					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+						System.out.println("Complete"); return;
+					}
+					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+						System.out.println("TIE");
+						return;
+					}
+					play(rand, 1);
 				}
 			}
 		}
@@ -267,8 +376,15 @@ public class ML {
 						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
 							play(10, 1);
 						}
+						if(PlayerManager.checkForSmallTie(1)==true){
+							play(10,1);
+						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -283,16 +399,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==2) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board2.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board2.board[randChoice].equals("-")) {
+						Init.board2.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board2)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(2)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -307,16 +430,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==3) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board3.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board3.board[randChoice].equals("-")) {
+						Init.board3.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board3)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(3)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -331,16 +461,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==4) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board4.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board4.board[randChoice].equals("-")) {
+						Init.board4.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board4)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(4)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -355,16 +492,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==5) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board5.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board5.board[randChoice].equals("-")) {
+						Init.board5.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board5)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(5)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -379,16 +523,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==6) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board6.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board6.board[randChoice].equals("-")) {
+						Init.board6.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board6)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(6)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -403,16 +554,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==7) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board7.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board7.board[randChoice].equals("-")) {
+						Init.board7.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board7)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(7)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -427,16 +585,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==8) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board8.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board8.board[randChoice].equals("-")) {
+						Init.board8.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board8)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(8)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -451,16 +616,23 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==9) {
-				if(Init.board1.isComplete==false) {
+				if(Init.board9.isComplete==false) {
 					Random rndm = new Random();
 					int randChoice = rndm.nextInt(9)+1;
-					if(Init.board1.board[randChoice].equals("-")) {
-						Init.board1.board[randChoice] = "O";
-						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
+					if(Init.board9.board[randChoice].equals("-")) {
+						Init.board9.board[randChoice] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board9)==true) {
 							play(10, 1);
+						}
+						if(PlayerManager.checkForSmallTie(9)==true){
+							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Complete"); return;
+						}
+						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+							System.out.println("TIE");
+							return;
 						}
 						else {
 							play(PlayerManager.checkNextBoard(randChoice), 1);
@@ -475,13 +647,34 @@ public class ML {
 				}
 			}
 			if(boardToPlayOn==10) {
+				if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+					System.out.println("Complete"); return;
+				}
+				if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+					System.out.println("TIE");
+					return;
+				}
 				Random rndm = new Random();
 				int rand = rndm.nextInt(9)+1;
 				if(rand<1||rand>9) {
-					play(10, 1); //Try again
+					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+						System.out.println("Complete"); return;
+					}
+					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+						System.out.println("TIE");
+						return;
+					}
+					play(10, 2); //Try again
 				}
 				else {
-					boardToPlayOn = rand;
+					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+						System.out.println("Complete"); return;
+					}
+					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+						System.out.println("TIE");
+						return;
+					}
+					play(rand, 2);
 				}
 			}
 		}

@@ -2,6 +2,7 @@
 public class Board {
 	public boolean isComplete;
 	public boolean isXWin;
+	public boolean isTie;
 	public String[] board;
 	public Board() {
 		board = new String[10];
@@ -17,6 +18,23 @@ public class Board {
 		}catch(Exception e) {
 			e.printStackTrace();
 			return "error";
+		}
+	}
+	public boolean isTie() {
+		if(!board[1].equals("-")&&!board[2].equals("-")&&!board[3].equals("-")&&!board[4].equals("-")&&!board[5].equals("-")&&!board[6].equals("-")&&!board[7].equals("-")&&!board[8].equals("-")&&!board[9].equals("-")) {
+			if(!isComplete==true) {
+				isComplete=true;
+				isTie = true;
+				markTie();
+				return true;
+			}
+		}
+		return false;
+	}
+	public void markTie() {
+		for(int i = 1; i<=9; i++) {
+			board[i] = "T";
+			isComplete = true;
 		}
 	}
 	public void markCompleted(boolean playerOneWin) {

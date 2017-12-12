@@ -599,4 +599,70 @@ public class PlayerManager {
 		}
 		return -1; //error case
 	}
+	public static boolean checkForSmallTie(int boardNum) {
+		if(boardNum==1) {
+			if(Init.board1.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==2) {
+			if(Init.board2.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==3) {
+			if(Init.board3.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==4) {
+			if(Init.board4.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==5) {
+			if(Init.board5.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==6) {
+			if(Init.board6.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==7) {
+			if(Init.board7.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==8) {
+			if(Init.board8.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		if(boardNum==9) {
+			if(Init.board9.isTie()==true){
+				return true;
+			}
+			return false;
+		}
+		return false;
+	}
+	public static boolean checkForTie(Board board1, Board board2, Board board3, Board board4, Board board5, Board board6, Board board7, Board board8, Board board9) {
+		if(board1.isComplete&&board2.isComplete&&board3.isComplete&&board4.isComplete&&board5.isComplete&&board6.isComplete&&board7.isComplete&&board8.isComplete&&board9.isComplete) {
+			if(checkForLargeWin(board1, board2, board3, board4, board5, board6, board7, board8, board9)==false) {
+				return true;
+			}
+			
+		}
+		return false;
+	}
 }
