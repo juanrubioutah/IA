@@ -10,24 +10,31 @@ public class ML {
 			play(10, 1);
 			System.out.println("Printing Results:");
 			Init.printBoard(Init.board1, Init.board1, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9);
-			Init.board1.clear();
-			Init.board2.clear();
-			Init.board3.clear();
-			Init.board4.clear();
-			Init.board5.clear();
-			Init.board6.clear();
-			Init.board7.clear();
-			Init.board8.clear();
-			Init.board9.clear();
+			Init.board1 = new Board();
+			Init.board2 = new Board();
+			Init.board3 = new Board();
+			Init.board4 = new Board();
+			Init.board5 = new Board();
+			Init.board6 = new Board();
+			Init.board7 = new Board();
+			Init.board8 = new Board();
+			Init.board9 = new Board();
 		}
 	}
 	public static void play(int boardToPlayOn, int nextTurn) {
 		Init.printBoard(Init.board1, Init.board1, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9);
 		try {
-			Thread.sleep(10);
+			Thread.sleep(15);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
+		}
+		if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+			System.out.println("Complete"); return;
+		}
+		if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
+			System.out.println("TIE");
+			return;
 		}
 		PlayerManager.checkForSmallWin(Init.board1);
 		PlayerManager.checkForSmallWin(Init.board2);
@@ -47,13 +54,6 @@ public class ML {
 		PlayerManager.checkForSmallTie(7);
 		PlayerManager.checkForSmallTie(8);
 		PlayerManager.checkForSmallTie(9);
-		if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
-			System.out.println("Complete"); return;
-		}
-		if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
-			System.out.println("TIE");
-			return;
-		}
 		if(nextTurn==1) {
 			if(boardToPlayOn==1) {
 				if(Init.board1.isComplete==false) {
