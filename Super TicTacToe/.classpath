@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Java ML"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/juanr/OneDrive/Documents/GitHub/IA/Super TicTacToe/weka/weka.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Juan Rubio/OneDrive/Documents/GitHub/IA/Super TicTacToe/weka/weka.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
