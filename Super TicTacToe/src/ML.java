@@ -18,7 +18,7 @@ public class ML {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		for(int i = 0; i<=1000; i++) {
+		for(int i = 0; i<=4; i++) {
 			play(10, 1);
 			System.out.println("Printing Results:");
 			Init.printBoard(Init.board1, Init.board1, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9);
@@ -31,6 +31,18 @@ public class ML {
 			Init.board7 = new Board();
 			Init.board8 = new Board();
 			Init.board9 = new Board();
+		}
+		System.out.println("Performing Analysis...");
+		try {
+			Thread.sleep(1000);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			helper.performML();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	public static void play(int boardToPlayOn, int nextTurn) {
