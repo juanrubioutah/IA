@@ -12,14 +12,20 @@ public class Init {
 	public static Board board7 = new Board();
 	public static Board board8 = new Board();
 	public static Board board9 = new Board();
-	
+	public static MLHelper helper;
 	public static void main(String args[]) {
+		
 		printBoard(board1, board2, board3, board4, board5, board6, board7, board8, board9);
 		System.out.println("Welcome to SUPER TicTacToe!");
 		System.out.println("Are you playing alone? Yes/No");
 		Scanner playerReader = new Scanner(System.in);
 		String singlePlayer = playerReader.next();
 		if(singlePlayer.equalsIgnoreCase("yes")) {
+			try {
+				helper = new MLHelper();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
 			playingAlone = true;
 			PlayerManager playerManager = new PlayerManager(playingAlone);
 			playerManager.play(10, true);
@@ -35,14 +41,19 @@ public class Init {
 			Scanner passwordReader = new Scanner(System.in);
 			String password = passwordReader.next();
 			if(password.equals("chispas1")) {
-				System.out.println("Welcome Juan Rubio. Performing ML data production in 3 seconds.");
+				System.out.println("Welcome Juan Rubio. Performing ML data analysis in 3 seconds.");
 				try{
 					Thread.sleep(3000);
 				}
 				catch(Exception e) {
 					e.printStackTrace();
 				}
-				ML.init();
+				try {
+					helper.performML();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			else {
 				System.out.println("The password is incorrect. Exiting");

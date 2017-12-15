@@ -36,6 +36,7 @@ public class PlayerManager {
 			if(checkOpenSpace(board, chosenSpace)==true) {
 				if(board==1) {
 					Init.board1.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board1)==true){
 						board = 10;
 					}
@@ -48,6 +49,7 @@ public class PlayerManager {
 				}
 				if(board==2) {
 					Init.board2.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board2)==true){
 						board = 10;
 					}
@@ -60,6 +62,7 @@ public class PlayerManager {
 				}
 				if(board==3) {
 					Init.board3.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board3)==true){
 						board = 10;
 					}
@@ -72,6 +75,7 @@ public class PlayerManager {
 				}
 				if(board==4) {
 					Init.board4.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board4)==true){
 						board = 10;
 					}
@@ -84,6 +88,7 @@ public class PlayerManager {
 				}
 				if(board==5) {
 					Init.board5.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board5)==true){
 						board = 10;
 					}
@@ -96,6 +101,7 @@ public class PlayerManager {
 				}
 				if(board==6) {
 					Init.board6.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board6)==true){
 						board = 10;
 					}
@@ -108,6 +114,7 @@ public class PlayerManager {
 				}
 				if(board==7) {
 					Init.board7.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board7)==true){
 						board = 10;
 					}
@@ -120,6 +127,7 @@ public class PlayerManager {
 				}
 				if(board==8) {
 					Init.board8.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board8)==true){
 						board = 10;
 					}
@@ -132,6 +140,7 @@ public class PlayerManager {
 				}
 				if(board==9) {
 					Init.board9.board[chosenSpace] = "X";
+					Init.helper.write(chosenSpace);
 					if(checkForSmallWin(Init.board9)==true){
 						board = 10;
 					}

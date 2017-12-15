@@ -85,28 +85,28 @@ public class ML {
 						Init.board1.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(1)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -126,28 +126,28 @@ public class ML {
 						Init.board2.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board2)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(2)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -167,28 +167,28 @@ public class ML {
 						Init.board3.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board3)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(3)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -208,28 +208,28 @@ public class ML {
 						Init.board4.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board4)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(4)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -249,28 +249,28 @@ public class ML {
 						Init.board5.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board5)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(5)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -290,28 +290,28 @@ public class ML {
 						Init.board6.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board6)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(6)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -331,28 +331,28 @@ public class ML {
 						Init.board7.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board7)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(7)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -372,28 +372,28 @@ public class ML {
 						Init.board8.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board8)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(8)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -413,28 +413,28 @@ public class ML {
 						Init.board9.board[randChoice] = "X";
 						if(PlayerManager.checkForSmallWin(Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 2);
 						}
 						if(PlayerManager.checkForSmallTie(9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,2);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 2);
 						}
 					}
@@ -449,12 +449,12 @@ public class ML {
 			if(boardToPlayOn==10) {
 				if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 					System.out.println("Saving Result Data");
-					helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+					helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 					System.out.println("Complete"); return;
 				}
 				if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 					System.out.println("Saving Result Data");
-					helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+					helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 					System.out.println("TIE");
 					return;
 				}
@@ -463,12 +463,12 @@ public class ML {
 				if(rand<1||rand>9) {
 					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("Complete"); return;
 					}
 					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("TIE");
 						return;
 					}
@@ -477,12 +477,12 @@ public class ML {
 				else {
 					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("Complete"); return;
 					}
 					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("TIE");
 						return;
 					}
@@ -499,28 +499,28 @@ public class ML {
 						Init.board1.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board1)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(1)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board1, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -540,28 +540,28 @@ public class ML {
 						Init.board2.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board2)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(2)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board2, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -581,28 +581,28 @@ public class ML {
 						Init.board3.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board3)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(3)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board3, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -622,28 +622,28 @@ public class ML {
 						Init.board4.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board4)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(4)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board4, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -663,28 +663,28 @@ public class ML {
 						Init.board5.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board5)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(5)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board5, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -704,28 +704,28 @@ public class ML {
 						Init.board6.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board6)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(6)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board6, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -745,28 +745,28 @@ public class ML {
 						Init.board7.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board7)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(7)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board7, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -786,28 +786,28 @@ public class ML {
 						Init.board8.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board8)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(8)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board8, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -827,28 +827,28 @@ public class ML {
 						Init.board9.board[randChoice] = "O";
 						if(PlayerManager.checkForSmallWin(Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10, 1);
 						}
 						if(PlayerManager.checkForSmallTie(9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(10,1);
 						}
 						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("Complete"); return;
 						}
 						if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							System.out.println("TIE");
 							return;
 						}
 						else {
 							System.out.println("Saving Result Data");
-							helper.write(Init.board9, randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+							helper.write(randChoice); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 							play(PlayerManager.checkNextBoard(randChoice), 1);
 						}
 					}
@@ -863,12 +863,12 @@ public class ML {
 			if(boardToPlayOn==10) {
 				if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 					System.out.println("Saving Result Data");
-					helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+					helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 					System.out.println("Complete"); return;
 				}
 				if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 					System.out.println("Saving Result Data");
-					helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+					helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 					System.out.println("TIE");
 					return;
 				}
@@ -877,12 +877,12 @@ public class ML {
 				if(rand<1||rand>9) {
 					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("Complete"); return;
 					}
 					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("TIE");
 						return;
 					}
@@ -891,12 +891,12 @@ public class ML {
 				else {
 					if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("Complete"); return;
 					}
 					if(PlayerManager.checkForTie(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 						System.out.println("Saving Result Data");
-						helper.write(Init.board1, 1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
+						helper.write(1); try { Thread.sleep(10); } catch(Exception e) { e.printStackTrace();}
 						System.out.println("TIE");
 						return;
 					}
