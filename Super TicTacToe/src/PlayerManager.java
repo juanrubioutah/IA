@@ -674,4 +674,15 @@ public class PlayerManager {
 		}
 		return false;
 	}
+	public static void clearBoards() {
+		Init.board1.clear();
+		Init.board2.clear();
+		Init.board3.clear();
+		Init.board4.clear();
+		Init.board5.clear();
+		Init.board6.clear();
+		Init.board7.clear();
+		Init.board8.clear();
+		Init.board9.clear();
+	}
 }

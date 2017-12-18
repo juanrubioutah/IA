@@ -56,6 +56,9 @@ public class Board {
 		}
 	}
 	public void clear() {
+		isComplete = false;
+		isXWin = false;
+		isTie = false;
 		for(int i = 1; i<=9; i++) {
 			board[i] = "-";
 		}

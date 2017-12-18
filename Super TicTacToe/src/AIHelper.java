@@ -105,7 +105,7 @@ public class AIHelper {
 		printWriter.println(Init.board9.board[1]+","+Init.board9.board[2]+","+Init.board9.board[3]+","+Init.board9.board[4]+","+Init.board9.board[5]+","+Init.board9.board[6]+","+Init.board9.board[7]+","+Init.board9.board[8]+","+Init.board9.board[9]+",?");
 		printWriter.flush();
 	}
-	public static int evaluate() {
+	//public static int evaluate() {
 		
-	}
+	//}
 }

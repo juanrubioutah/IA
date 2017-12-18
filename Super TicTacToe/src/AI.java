@@ -27,7 +27,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -56,7 +56,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -85,7 +85,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -114,7 +114,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -143,7 +143,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -172,7 +172,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -201,7 +201,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -230,7 +230,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -259,7 +259,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -291,7 +291,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -320,7 +320,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -349,7 +349,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -378,7 +378,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -407,7 +407,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -436,7 +436,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -465,7 +465,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -494,7 +494,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -523,7 +523,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(brdChoice);
@@ -569,7 +569,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -584,7 +584,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -599,7 +599,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -617,7 +617,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -643,7 +643,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -658,7 +658,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -673,7 +673,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -691,7 +691,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -717,7 +717,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -732,7 +732,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -747,7 +747,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -765,7 +765,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -791,7 +791,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -806,7 +806,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -821,7 +821,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -839,7 +839,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -865,7 +865,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -880,7 +880,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -895,7 +895,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -913,7 +913,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -939,7 +939,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -954,7 +954,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -969,7 +969,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -987,7 +987,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -1013,7 +1013,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -1028,7 +1028,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -1043,7 +1043,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -1061,7 +1061,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -1087,7 +1087,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(6);
@@ -1102,7 +1102,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(8);
@@ -1117,7 +1117,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -1135,7 +1135,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(choice);
@@ -1161,7 +1161,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -1176,7 +1176,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -1191,7 +1191,7 @@ public class AI {
 							}
 							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 								System.out.println("Win.");
-								System.exit(0);
+								PlayerManager.clearBoards(); PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
 								nextPlay = PlayerManager.checkNextBoard(9);
@@ -1209,7 +1209,7 @@ public class AI {
 								}
 								if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true){
 									System.out.println("Win.");
-									System.exit(0);
+									PlayerManager.clearBoards(); PlayerManager.play(10, true);
 								}
 								if(nextPlay!=10) {
 									nextPlay = PlayerManager.checkNextBoard(9);
