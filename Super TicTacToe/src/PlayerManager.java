@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class PlayerManager {
@@ -6,8 +8,8 @@ public class PlayerManager {
 	public PlayerManager(boolean isPlayingAlone) {
 		this.isPlayingAlone = isPlayingAlone;
 	}
-	public static void play(int board, boolean playerOneTurn) { //Return a result of which board the next turn will be on. Returns 10 if any board is playable.
-		ai = new AI(1);
+	public static void play(int board, boolean playerOneTurn) throws FileNotFoundException, UnsupportedEncodingException { //Return a result of which board the next turn will be on. Returns 10 if any board is playable.
+		ai = new AI(2);
 		String playCharacter = "-";
 		Init.printBoard(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9);
 		if(playerOneTurn==true) {
@@ -36,7 +38,8 @@ public class PlayerManager {
 			if(checkOpenSpace(board, chosenSpace)==true) {
 				if(board==1) {
 					Init.board1.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board1)==true){
 						board = 10;
 					}
@@ -49,7 +52,8 @@ public class PlayerManager {
 				}
 				if(board==2) {
 					Init.board2.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board2)==true){
 						board = 10;
 					}
@@ -62,7 +66,8 @@ public class PlayerManager {
 				}
 				if(board==3) {
 					Init.board3.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board3)==true){
 						board = 10;
 					}
@@ -75,7 +80,8 @@ public class PlayerManager {
 				}
 				if(board==4) {
 					Init.board4.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board4)==true){
 						board = 10;
 					}
@@ -88,7 +94,8 @@ public class PlayerManager {
 				}
 				if(board==5) {
 					Init.board5.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board5)==true){
 						board = 10;
 					}
@@ -101,7 +108,8 @@ public class PlayerManager {
 				}
 				if(board==6) {
 					Init.board6.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board6)==true){
 						board = 10;
 					}
@@ -114,7 +122,8 @@ public class PlayerManager {
 				}
 				if(board==7) {
 					Init.board7.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board7)==true){
 						board = 10;
 					}
@@ -127,7 +136,8 @@ public class PlayerManager {
 				}
 				if(board==8) {
 					Init.board8.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board8)==true){
 						board = 10;
 					}
@@ -140,7 +150,8 @@ public class PlayerManager {
 				}
 				if(board==9) {
 					Init.board9.board[chosenSpace] = "X";
-					Init.helper.write(chosenSpace);
+					//Init.helper.write(chosenSpace);
+					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board9)==true){
 						board = 10;
 					}
@@ -160,7 +171,12 @@ public class PlayerManager {
 		}
 		else if(playerOneTurn==false) {
 			if(isPlayingAlone==true) {
-				ai.play(board);
+				try {
+					ai.play(board);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				playerOneTurn = true;
 			}
 			playCharacter = "O";

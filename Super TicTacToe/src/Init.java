@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class Init {
@@ -13,7 +15,7 @@ public class Init {
 	public static Board board8 = new Board();
 	public static Board board9 = new Board();
 	public static MLHelper helper;
-	public static void main(String args[]) {
+	public static void main(String args[]) throws FileNotFoundException, UnsupportedEncodingException {
 		
 		printBoard(board1, board2, board3, board4, board5, board6, board7, board8, board9);
 		System.out.println("Welcome to SUPER TicTacToe!");
@@ -22,7 +24,7 @@ public class Init {
 		String singlePlayer = playerReader.next();
 		if(singlePlayer.equalsIgnoreCase("yes")) {
 			try {
-				helper = new MLHelper();
+				//helper = new MLHelper();
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -49,7 +51,7 @@ public class Init {
 					e.printStackTrace();
 				}
 				try {
-					helper.performML();
+					//helper.performML();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

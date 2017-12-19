@@ -5,7 +5,7 @@ public class AI {
 	public AI(int difficulty) { //difficulty is 1 for easy, and 2 for hard
 		this.difficulty = difficulty;
 	}
-	public static void play(int boardToPlayOn) {
+	public static void play(int boardToPlayOn) throws Exception {
 		int nextPlay = 1;
 		if(difficulty==1) { //easy mode
 			if(boardToPlayOn == 10) { //randomly pick a board
@@ -545,9 +545,9 @@ public class AI {
 		else if(difficulty==2) { //hard mode
 			/* this is where things start to get fun. The AI will use one of two strategies:
 			 * In strategy 1, the AI will attempt to have the player only play in boards 6, 8, and 9, while picking random spaces in any cases where it cannot send the player to these boards
-			 * In strategy 2, the AI will attempt to win each board it plays on based on the standard tic tac toe AI, regardless of where it sends the other player
+			 * In strategy 2, the AI will use machine learning to make the best possible choices based on experience
 			 */
-			int mode = 1;
+			int mode = 2;
 			if(mode==1) {
 				if(boardToPlayOn==0) {
 					Random rndm = new Random();
@@ -1151,7 +1151,7 @@ public class AI {
 						play(0);
 					}
 				}
-				if(boardToPlayOn==1) {
+				if(boardToPlayOn==9) {
 					if(Init.board9.isComplete==false) {
 						if(Init.board9.get(6).equals("-")) {
 							Init.board9.board[6] = "O";
@@ -1227,6 +1227,452 @@ public class AI {
 				}
 			}
 			else if(mode==2) {
+				System.out.println("Machine Learning Computing...");
+				if(boardToPlayOn==1) {
+					if(Init.board1.board[MLHelper.play()].equals("-")) {
+						Init.board1.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board1)==true){
+							Init.board1.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board1.board[choice].equals("-")) {
+							Init.board1.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board1)==true){
+								Init.board1.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==2) {
+					if(Init.board2.board[MLHelper.play()].equals("-")) {
+						Init.board2.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board2)==true){
+							Init.board2.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board2.board[choice].equals("-")) {
+							Init.board2.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board2)==true){
+								Init.board2.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==3) {
+					if(Init.board3.board[MLHelper.play()].equals("-")) {
+						Init.board3.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board3)==true){
+							Init.board3.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board3.board[choice].equals("-")) {
+							Init.board3.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board3)==true){
+								Init.board3.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==4) {
+					if(Init.board4.board[MLHelper.play()].equals("-")) {
+						Init.board4.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board4)==true){
+							Init.board4.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board4.board[choice].equals("-")) {
+							Init.board4.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board4)==true){
+								Init.board4.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==5) {
+					if(Init.board5.board[MLHelper.play()].equals("-")) {
+						Init.board5.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board5)==true){
+							Init.board5.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board5.board[choice].equals("-")) {
+							Init.board5.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board5)==true){
+								Init.board5.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==6) {
+					if(Init.board6.board[MLHelper.play()].equals("-")) {
+						Init.board6.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board6)==true){
+							Init.board6.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board6.board[choice].equals("-")) {
+							Init.board6.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board6)==true){
+								Init.board6.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==7) {
+					if(Init.board7.board[MLHelper.play()].equals("-")) {
+						Init.board7.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board7)==true){
+							Init.board7.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board7.board[choice].equals("-")) {
+							Init.board7.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board7)==true){
+								Init.board7.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==8) {
+					if(Init.board8.board[MLHelper.play()].equals("-")) {
+						Init.board8.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board8)==true){
+							Init.board8.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board8.board[choice].equals("-")) {
+							Init.board8.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board8)==true){
+								Init.board8.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==9) {
+					if(Init.board9.board[MLHelper.play()].equals("-")) {
+						Init.board9.board[MLHelper.play()] = "O";
+						if(PlayerManager.checkForSmallWin(Init.board9)==true){
+							Init.board9.markCompleted(false);
+							nextPlay = 10;
+						}
+						if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+							System.out.println("Win.");
+							PlayerManager.clearBoards();
+							PlayerManager.play(10, true);
+						}
+						if(nextPlay!=10) {
+							nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+						}
+						PlayerManager.play(nextPlay, true);
+					}
+					else {
+						Random rndm = new Random();
+						int choice = rndm.nextInt(9)+1;
+						if(Init.board9.board[choice].equals("-")) {
+							Init.board9.board[choice] = "O";
+							if(PlayerManager.checkForSmallWin(Init.board9)==true){
+								Init.board9.markCompleted(false);
+								nextPlay = 10;
+							}
+							if(PlayerManager.checkForLargeWin(Init.board1, Init.board2, Init.board3, Init.board4, Init.board5, Init.board6, Init.board7, Init.board8, Init.board9)==true) {
+								System.out.println("Win.");
+								PlayerManager.clearBoards();
+								PlayerManager.play(10, true);
+							}
+							if(nextPlay!=10) {
+								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+							}
+							PlayerManager.play(nextPlay, true);
+						}
+						else {
+							play(boardToPlayOn);
+						}
+					}
+				}
+				if(boardToPlayOn==10) {
+					Random rndm = new Random();
+					int choice = rndm.nextInt(9)+1;
+					if(choice==1) {
+						if(!Init.board1.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==2) {
+						if(!Init.board2.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==3) {
+						if(!Init.board3.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==4) {
+						if(!Init.board4.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==5) {
+						if(!Init.board5.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==6) {
+						if(!Init.board6.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==7) {
+						if(!Init.board7.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==8) {
+						if(!Init.board8.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+					if(choice==9) {
+						if(!Init.board9.isComplete) {
+							play(choice);
+						}
+						else {
+							play(10);
+						}
+					}
+				}
 				
 			}
 		}
