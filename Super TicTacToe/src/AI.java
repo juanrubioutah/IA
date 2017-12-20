@@ -1260,7 +1260,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1301,7 +1301,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1342,7 +1342,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1383,7 +1383,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1424,7 +1424,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1465,7 +1465,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1506,7 +1506,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1547,7 +1547,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}
@@ -1588,7 +1588,7 @@ public class AI {
 								PlayerManager.play(10, true);
 							}
 							if(nextPlay!=10) {
-								nextPlay = PlayerManager.checkNextBoard(MLHelper.play());
+								nextPlay = PlayerManager.checkNextBoard(choice);
 							}
 							PlayerManager.play(nextPlay, true);
 						}

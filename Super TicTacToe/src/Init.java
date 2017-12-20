@@ -24,7 +24,7 @@ public class Init {
 		String singlePlayer = playerReader.next();
 		if(singlePlayer.equalsIgnoreCase("yes")) {
 			try {
-				//helper = new MLHelper();
+				helper = new MLHelper();
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -51,7 +51,7 @@ public class Init {
 					e.printStackTrace();
 				}
 				try {
-					//helper.performML();
+					helper.performML();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
