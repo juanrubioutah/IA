@@ -92,8 +92,9 @@ public class PlayerManager {
 			}
 			if(checkOpenSpace(board, chosenSpace)==true) {
 				if(board==1) {
-					Init.board1.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board1.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board1)==true){
 						board = 10;
@@ -106,8 +107,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==2) {
-					Init.board2.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board2.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board2)==true){
 						board = 10;
@@ -120,8 +122,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==3) {
-					Init.board3.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board3.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board3)==true){
 						board = 10;
@@ -134,8 +137,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==4) {
-					Init.board4.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board4.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board4)==true){
 						board = 10;
@@ -148,8 +152,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==5) {
-					Init.board5.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board5.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board5)==true){
 						board = 10;
@@ -162,8 +167,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==6) {
-					Init.board6.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board6.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board6)==true){
 						board = 10;
@@ -176,8 +182,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==7) {
-					Init.board7.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board7.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board7)==true){
 						board = 10;
@@ -190,8 +197,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==8) {
-					Init.board8.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board8.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board8)==true){
 						board = 10;
@@ -204,8 +212,9 @@ public class PlayerManager {
 					play(board, playerOneTurn);
 				}
 				if(board==9) {
-					Init.board9.board[chosenSpace] = "X";
 					Init.helper.write(chosenSpace);
+					Init.board9.board[chosenSpace] = "X";
+					
 					MLHelper.writeLastMove();
 					if(checkForSmallWin(Init.board9)==true){
 						board = 10;
