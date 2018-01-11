@@ -20,7 +20,7 @@ import weka.core.converters.ConverterUtils;
 import weka.filters.unsupervised.attribute.Remove;
 
 
-public class MLHelper {
+public class MLHelper{
 
 		public static PrintWriter printWriter;
 		public static PrintWriter second;

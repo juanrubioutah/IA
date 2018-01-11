@@ -33,6 +33,11 @@ public class Init {
 			playerManager.play(10, true);
 		}
 		else if(singlePlayer.equalsIgnoreCase("no")) {
+			try {
+				helper = new MLHelper();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
 			playingAlone = false;
 			int sentToBoard = 0; //number 1 to 9 indicating the board of the next play. Also uses 0 when any board can be played
 			PlayerManager playerManager = new PlayerManager(playingAlone);
